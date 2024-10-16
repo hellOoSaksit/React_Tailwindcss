@@ -11,7 +11,7 @@ const Hero = () => {
           {/* เพิ่ม margin-right */}
           <div>
             <div className="font-semibold flex items-center uppercase">
-              Project Minterm
+              Project Midterm
             </div>
           </div>
           <h1 className="text-[70px] leading-[1.1] font-light mb-4 uppercase">
