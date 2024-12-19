@@ -47,8 +47,8 @@ npm start
 ### 📌 หัวข้อที่ 1: หน้าเข้าสู่ระบบ
 - **คำอธิบาย**: ตัวอย่างการทำงานเมื่อผู้ใช้เข้าสู่ระบบ
 - **รูปภาพ**:
-  ![หน้าเข้าสู่ระบบ](<img width="1266" alt="image" src="https://github.com/user-attachments/assets/6bef29a0-4252-45ad-9a85-bfd2cf67d979" />
-)
+  
+  <img width="1266" alt="image" src="https://github.com/user-attachments/assets/6bef29a0-4252-45ad-9a85-bfd2cf67d979" />
 
 ### 📌 หัวข้อที่ 2: รายละเอียดสินค้า
 - **คำอธิบาย**: หน้ารายละเอียดของสินค้า พร้อมข้อมูลเพิ่มเติม
