@@ -50,20 +50,30 @@ npm start
   
   <img width="1266" alt="image" src="https://github.com/user-attachments/assets/6bef29a0-4252-45ad-9a85-bfd2cf67d979" />
 
-### 📌 หัวข้อที่ 2: รายละเอียดสินค้า
-- **คำอธิบาย**: หน้ารายละเอียดของสินค้า พร้อมข้อมูลเพิ่มเติม
+### 📌 หัวข้อที่ 2: หน้าสมัครสมาชิก
+- **คำอธิบาย**: หน้ารายละเอียดการสมัครสามาชิก
 - **รูปภาพ**:
-  ![รายละเอียดสินค้า](path/to/image2.png)
+
+  <img width="1250" alt="image" src="https://github.com/user-attachments/assets/41f3a6d7-382f-476c-bead-164d6dd671b1" />
+
 
 ### 📌 หัวข้อที่ 3: การชำระเงิน
 - **คำอธิบาย**: ตัวอย่างหน้าชำระเงินที่ผู้ใช้สามารถตรวจสอบคำสั่งซื้อ
 - **รูปภาพ**:
   ![การชำระเงิน](path/to/image3.png)
 
-### 📌 หัวข้อที่ 4: หน้าแดชบอร์ด (Dashboard)
-- **คำอธิบาย**: หน้าแดชบอร์ดสำหรับผู้ดูแลระบบในการจัดการสินค้าและคำสั่งซื้อ
+### 📌 หัวข้อที่ 4: รูปภาพเพิ่มเติมเว็บ
+- **คำอธิบาย**: หน้าต่างๆของเว็บไซต์
 - **รูปภาพ**:
-  ![หน้าแดชบอร์ด](path/to/image4.png)
+  
+  <img width="1248" alt="image" src="https://github.com/user-attachments/assets/edc8e02c-e332-4c2a-9cb4-8113a4e365b5" />
+
+  <img width="446" alt="image" src="https://github.com/user-attachments/assets/44059b9d-a790-43f9-abbd-33b7cc1c1be2" />
+
+  <img width="188" alt="image" src="https://github.com/user-attachments/assets/7c5c2c69-74ab-45b5-acba-3da0a0e5c05a" />
+
+  <img width="858" alt="image" src="https://github.com/user-attachments/assets/701d1dd0-34c5-43d7-b3fa-38aa74ac9f2a" />
+
 
 ---
 
