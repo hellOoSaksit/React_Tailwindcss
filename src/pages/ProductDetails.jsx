@@ -19,26 +19,27 @@ const ProductDetails = () => {
   }
   const { title, price, description, image } = product;
   return (
-    <section className="pt-32 pb-12 lg:py-32 h-screen">
+    <section className="pt-16 pb-8 lg:py-32 h-full">
       <div className="container mx-auto">
-        {/* image & text wrapper */}
-        <div className="flex flex-col lg:flex-row items-center">
-          {/* img */}
-          <div className="flex flex-1 justify-center mb-8 lg:mb-0">
-            <img src={image} alt="" className="max-w-[200px] lg:max-w-sm" />
+        <div className="flex flex-col lg:flex-row items-center gap-8">
+          <div className="flex-1 flex justify-center">
+            <img
+              src={image}
+              alt=""
+              className="max-w-[150px] lg:max-w-[300px]"
+            />
           </div>
-          {/* Text */}
-          <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-[26px] font-medium mb-2 max-w-[450px] mx-auto">
+          <div className="flex-1 text-center lg:text-left px-4 lg:px-0">
+            <h1 className="text-[20px] md:text-[26px] font-medium mb-4">
               {title}
             </h1>
-            <div className="text-xl text-red-500 font-medium mb-6">
-              $ {price}
+            <div className="text-lg md:text-xl text-red-500 font-medium mb-6">
+              ${price}
             </div>
-            <p className="mb-8">{description}</p>
-            <button 
-            onClick={() => addToCart(product,product.id)}
-            className="bg-black py-4 px-8 text-white"> Add Cart</button>
+            <p className="text-sm md:text-base mb-8">{description}</p>
+            <button className="bg-black py-3 px-6 text-white">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
