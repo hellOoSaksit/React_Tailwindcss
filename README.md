@@ -22,7 +22,7 @@
 
 ### 1. Clone โปรเจกต์
 ```bash
-git clone [https://github.com/your-username/your-repo.git](https://github.com/hellOoSaksit/React_Tailwindcss.git)
+git clone https://github.com/hellOoSaksit/React_Tailwindcss.git
 ```
 
 ### 2. ติดตั้ง Dependencies
