@@ -1,3 +1,4 @@
+// Hotfix-0.0.2 - CartContext.jsx - 2024-12-21 - main
 import React, { createContext, useState, useEffect } from "react";
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 import { auth } from "../config/firebaseConfig";
