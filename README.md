@@ -39,8 +39,8 @@ npm start
 
 ## 🔑 User ทดลอง
 ```
-- **Email**: user6402385@rsu.ac.th
-- **Password**: 123456
+- Email: user6402385@rsu.ac.th
+- Password: 123456
 ```
 ---
 
