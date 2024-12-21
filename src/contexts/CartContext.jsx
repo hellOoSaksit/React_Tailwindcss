@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useEffect } from "react";
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 import { auth } from "../config/firebaseConfig";
@@ -12,32 +11,40 @@ const CartProvider = ({ children }) => {
 
   // Firestore instance
   const db = getFirestore();
-  const userId = auth.currentUser ? auth.currentUser.uid : null;
 
   // Fetch cart data from Firestore on initial render
   useEffect(() => {
     const fetchCart = async () => {
-      if (userId) {
-        const cartDocRef = doc(db, "users", userId, "cart", "items");
+      const user = auth.currentUser;
+      if (user) {
+        const cartDocRef = doc(db, "users", user.uid, "cart", "items");
         const cartDoc = await getDoc(cartDocRef);
         if (cartDoc.exists()) {
           setCart(cartDoc.data().cart || []);
         }
       }
     };
-    fetchCart();
-  }, [userId, db]);
+
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        fetchCart();
+      }
+    });
+
+    return () => unsubscribe();
+  }, [db]);
 
   // Save all cart data to Firestore whenever it changes
   useEffect(() => {
     const saveCart = async () => {
-      if (userId) {
-        const cartDocRef = doc(db, "users", userId, "cart", "items");
+      const user = auth.currentUser;
+      if (user) {
+        const cartDocRef = doc(db, "users", user.uid, "cart", "items");
         await setDoc(cartDocRef, { cart });
       }
     };
     saveCart();
-  }, [cart, userId, db]);
+  }, [cart, db]);
 
   // Calculate total price
   useEffect(() => {
