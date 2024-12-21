@@ -1,3 +1,4 @@
+// HotFix: CartContext.jsx
 import React, { createContext, useState, useEffect } from "react";
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 import { auth } from "../config/firebaseConfig";
@@ -21,14 +22,16 @@ const CartProvider = ({ children }) => {
         const cartDoc = await getDoc(cartDocRef);
         if (cartDoc.exists()) {
           setCart(cartDoc.data().cart || []);
+        } else {
+          setCart([]); // Reset cart if no data found
         }
+      } else {
+        setCart([]); // Reset cart if no user is logged in
       }
     };
 
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user) {
-        fetchCart();
-      }
+      fetchCart(); // Fetch cart whenever auth state changes
     });
 
     return () => unsubscribe();
